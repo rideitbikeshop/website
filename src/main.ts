@@ -205,5 +205,8 @@ function renderSite(content: SiteContent, baseUrl: string): string {
 }
 
 function isActive(locale: Locale, content: SiteContent): boolean {
-  return (locale === "pt" && content.lang === "pt-PT") || (locale === "en" && content.lang === "en");
+  return (
+    (locale === "pt" && content.lang === "pt-PT") ||
+    (locale === "en" && content.lang === "en")
+  );
 }
